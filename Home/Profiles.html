@@ -1,70 +1,49 @@
 ﻿<!DOCTYPE html>
 <html>
 
-<!-- Mirrored from localhost:44382/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2019 04:48:18 GMT -->
+<!-- Mirrored from localhost:44382/Home/Profiles by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2019 04:48:34 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Assets/libs/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <title>Profiles</title>
+    <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Assets/libs/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
 
-    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
     
     <style>
-        .container-banner {
-            width: 100%;
-            height: 800px;
-            /*background: rgba(255, 0, 0, 0.25), url('/Content/images/banner.png');*/
-            background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('Content/images/banner.png');
-            background-position: center bottom;
+        .profiles-container {
+            margin-top: 10px;
         }
 
-            .container-banner .banner-form {
-                margin-left: 80px;
-                margin-top: 150px;
-                background-color: rgba(0, 168, 255, 0.8);
-                padding: 15px;
-                display: inline-block;
+            .profiles-container p {
+                margin-top: 3px;
+                margin-bottom: 0px;
             }
 
-                .container-banner .banner-form span {
-                    color: white;
-                    font-family: HelveticaNeueMedium
-                }
+            .profiles-container .user-name {
+                font-family: HelveticaNeueMedium
+            }
 
-                .container-banner .banner-form .title {
-                    font-size: 23px
-                }
+            .profiles-container .row-item {
+                margin-top: 10px;
+            }
 
-                .container-banner .banner-form label {
-                    font-family: HelveticaNeue;
-                    color: white;
-                    margin-top: 20px;
-                    font-size: 18px;
-                }
+            .profiles-container .icon-verified {
+                padding: 0px 10px;
+                color: #11CE6C;
+            }
 
-                .container-banner .banner-form input {
-                    width: 100%;
-                    background: transparent;
-                    border: solid 1px white;
-                    color: white;
-                    padding: 8px 10px;
-                    font-family: HelveticaNeueMedium
-                }
+            .profiles-container .icon-not-verified {
+                padding: 0px 10px;
+                color: #FF3B30;
+            }
 
-                .container-banner .banner-form .btn-search {
-                    color: #00A5FF;
-                    padding: 5px 30px;
-                    background-color: white;
-                    font-size: 19px;
-                    text-transform: uppercase;
-                    font-family: HelveticaNeueThin;
-                    border: transparent;
-                    font-weight: bold;
-                }
+        .about-us {
+            max-width: 500px;
+        }
     </style>
 
 </head>
@@ -73,8 +52,14 @@
         
 
 
-<div class="container-banner">
+
+
 <style>
+    .menu-container-top {
+        padding: 15px 30px 0px 30px;
+        width: 100%;
+        position: relative;
+    }
     .menu-items1 {
         color: white;
         list-style: none;
@@ -87,389 +72,403 @@
         }
 
             .menu-items1 li a {
-                color: white;
+                color: black;
                 text-decoration: none;
                 font-size: 15px;
             }
 </style>
-<div style="padding:15px 30px 0px 30px;top: 0; width: 100%">
-    <div class="pull-left">
-        <a href="index.html">
-            <img src="Content/images/logo.png" style="width: 60px" />
+<div class="menu-container-top">
+    <div class="" style="display: inline-block; position: relative">
+        <a class="" href="../index.html">
+            <img src="../Content/images/logo.png" style="width: 60px" />
         </a>
+
     </div>
-    <div class="pull-right" style="padding: 22px 0px 0px 0px">
+    <div class="" style="display: inline-block; position: absolute; top: 50%; right: 0">
         <ul class="menu-items1">
             <li>
-                <a href="Home/CreateEx.html">Host an experience</a>
+                <a href="CreateEx.html">Host an experience</a>
             </li>
             <li>
-                <a href="Home/ResultSearch.html">Trips</a>
-            </li>
-            <li>
-                <a href="Home/ResultSearch.html">Saved</a>
-            </li>
-            <li>
-                <a href="javascript:;" data-toggle="modal" data-target="#modal-sign-up">Sign up</a>
-            </li>
-            <li>
-                <a href="javascript:;" data-toggle="modal" data-target="#modal-login">Login</a>
-            </li>
+                <a href="ResultSearch.html">Trips</a>
+            </li>x
         </ul>
     </div>
-
-    <div class="clearfix"></div>
 </div>
 
-    <div class="banner-form">
-        <form>
-            <span class="title">Book unique places to stay and things to do.</span>
-            <div style="padding: 10px;">
+<div class="profiles-container">
+    <div class="row">
+        <div class="col-md-4">
+            <div style="padding: 10px 20px; border: solid 1px #909090; text-align: center">
                 <div>
-                    <label>Where</label>
-                    <input type="text" value="Anywhere" />
+                    <img src="../Content/images/profile_avatar.png" />
                 </div>
-                <div>
-                    <label>Guests</label>
-                    <input type="text" value="Guests" />
-                </div>
-                <div style="width: 100%; text-align: center; margin-top: 30px">
-                    <a href="Home/ResultSearch.html" type="button" class="btn-search">Search</a>
+                <strong class="user-name">dkamphuoc</strong>
+                <p class="join-date">Joined in 2019</p>
+                <p class="address">Lives in Aptos, CA</p>
+                <p class="country">Speakes English, VN</p>
+                <hr style="border-color: #909090;" />
+                <div style="text-align: left">
+                    <p>Verified Profiles</p>
+                    <div style="padding-left: 5px">
+                        <div class="row-item">
+                            <i class="fa fa-check-circle icon-verified" aria-hidden="true"></i>
+                            <span>Phone verified</span>
+                        </div>
+                        <div class="row-item">
+                            <i class="fa fa-check-circle icon-not-verified" aria-hidden="true"></i>
+                            <span>Email address not verified</span>
+                        </div>
+                        <div class="row-item">
+                            <i class="fa fa-check-circle icon-not-verified" aria-hidden="true"></i>
+                            <span>Government ID not verified</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </form>
+        </div>
+        <div class="col-md-8">
+            <div class="about-us">
+                <h3>Hi, I’m Kitty</h3>
+                <p class="description" style="text-align: justify">
+                    I have been hosting on airbnb since July, 2009 and really love what this company has made possible. I have met so many wonderful people from around the world that I would never have met if I hadn't had this opportunity with airbnb! Some of our guests (especially the ones from Europe) have never seen a hummingbird before and here they get to see them up close - just a few feet from them as the birds "hum" around the feeders.
+
+                    We welcome you to come experience the peace and tranquility that our wonderful land has to offer.
+                </p>
+            </div>
+        </div>
     </div>
+
+    <section class="section">
+        <div class="header">
+            <span class="title">My Trips</span>
+            <div class="more">
+                <a href="javascript:;">
+                    Show all
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="row">
+                    <div class="col-md-4">
+                        <div class="item-top-rate-experiences">
+                            <div class="container-img">
+                                <a href="Details.html">
+                                    <img src="../Content/images/recommended_for_you1.png" style="width: 100%" />
+                                </a>
+                                <div class="group-action">
+                                    <div style="float: left">
+                                        <span>NAGOYA</span>
+                                    </div>
+                                    <div style="float: right">
+                                        <span>200</span>
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                        <span>50</span>
+                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </div>
+                            <div class="description">
+                                <a href="Details.html">
+                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item-top-rate-experiences">
+                            <div class="container-img">
+                                <a href="Details.html">
+                                    <img src="../Content/images/recommended_for_you2.png" style="width: 100%" />
+                                </a>
+                                <div class="group-action">
+                                    <div style="float: left">
+                                        <span>NAGOYA</span>
+                                    </div>
+                                    <div style="float: right">
+                                        <span>200</span>
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                        <span>50</span>
+                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </div>
+                            <div class="description">
+                                <a href="Details.html">
+                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item-top-rate-experiences">
+                            <div class="container-img">
+                                <a href="Details.html">
+                                    <img src="../Content/images/recommended_for_you3.png" style="width: 100%" />
+                                </a>
+                                <div class="group-action">
+                                    <div style="float: left">
+                                        <span>NAGOYA</span>
+                                    </div>
+                                    <div style="float: right">
+                                        <span>200</span>
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                        <span>50</span>
+                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </div>
+                            <div class="description">
+                                <a href="Details.html">
+                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="header">
+            <span class="title">My Photos</span>
+            <div class="more">
+                <a href="javascript:;">
+                    Show all photos
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="">
+            <div class="guest-photo">
+                <img class="img-responsive" src="../Content/images/gest_photo1.png" />
+            </div>
+            <div class="guest-photo">
+                <img class="img-responsive" src="../Content/images/gest_photo2.png" />
+            </div>
+            <div class="guest-photo">
+                <img class="img-responsive" src="../Content/images/gest_photo3.png" />
+            </div>
+
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="header">
+            <span class="title">My Souvenir</span>
+        </div>
+        <div class="content">
+            <div class="row">
+                    <div class="col-md-3">
+                        <div class="item-souvenir-for-you">
+                            <img class="image" src="../Content/images/souvenir_for_you1.png" style="width: 100%" />
+                            <p class="description">Silver earrings 1920s, style earrings ...</p>
+                            <p class="author">nimusOne</p>
+                            <div class="star">
+                                <span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-count">(3.065)</span>
+                                </span>
+                            </div>
+                            <p class="price">USD 22.0</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item-souvenir-for-you">
+                            <img class="image" src="../Content/images/souvenir_for_you2.png" style="width: 100%" />
+                            <p class="description">Silver earrings 1920s, style earrings ...</p>
+                            <p class="author">nimusOne</p>
+                            <div class="star">
+                                <span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-count">(3.065)</span>
+                                </span>
+                            </div>
+                            <p class="price">USD 22.0</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item-souvenir-for-you">
+                            <img class="image" src="../Content/images/souvenir_for_you3.png" style="width: 100%" />
+                            <p class="description">Silver earrings 1920s, style earrings ...</p>
+                            <p class="author">nimusOne</p>
+                            <div class="star">
+                                <span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-count">(3.065)</span>
+                                </span>
+                            </div>
+                            <p class="price">USD 22.0</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item-souvenir-for-you">
+                            <img class="image" src="../Content/images/souvenir_for_you4.png" style="width: 100%" />
+                            <p class="description">Silver earrings 1920s, style earrings ...</p>
+                            <p class="author">nimusOne</p>
+                            <div class="star">
+                                <span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-item glyphicon glyphicon-star"></span>
+                                    <span class="star-count">(3.065)</span>
+                                </span>
+                            </div>
+                            <p class="price">USD 22.0</p>
+                        </div>
+                    </div>
+
+        </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="header">
+            <span class="title">Reviews</span>
+        </div>
+        <div class="content">
+            <div class="comment">
+            <div class="comment-item">
+                <div class="user-info">
+                    <div class="avatar">
+                        <img src="../Content/images/review_avatar.png" style="border-radius: 50px;">
+                    </div>
+                    <div class="info">
+                        <div style="">
+                            <div style="display: flex;align-items: center;">
+                                <span class="user-name">dkamphuoc</span>
+                                <i class="fa fa-circle" aria-hidden="true" style="font-size: 4px;padding: 0px 5px;"></i>
+                                <span class="date">Jun, 2019</span>
+                            </div>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.</p>
+                </div>
+            </div>
+            <div class="comment-item">
+                <div class="user-info">
+                    <div class="avatar">
+                        <img src="../Content/images/review_avatar.png" style="border-radius: 50px;">
+                    </div>
+                    <div class="info">
+                        <div style="">
+                            <div style="display: flex;align-items: center;">
+                                <span class="user-name">dkamphuoc</span>
+                                <i class="fa fa-circle" aria-hidden="true" style="font-size: 4px;padding: 0px 5px;"></i>
+                                <span class="date">Jun, 2019</span>
+                            </div>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.</p>
+                </div>
+            </div>
+            <div class="comment-item">
+                <div class="user-info">
+                    <div class="avatar">
+                        <img src="../Content/images/review_avatar.png" style="border-radius: 50px;">
+                    </div>
+                    <div class="info">
+                        <div style="">
+                            <div style="display: flex;align-items: center;">
+                                <span class="user-name">dkamphuoc</span>
+                                <i class="fa fa-circle" aria-hidden="true" style="font-size: 4px;padding: 0px 5px;"></i>
+                                <span class="date">Jun, 2019</span>
+                            </div>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.</p>
+                </div>
+            </div>
+            <div class="comment-item">
+                <div class="user-info">
+                    <div class="avatar">
+                        <img src="../Content/images/review_avatar.png" style="border-radius: 50px;">
+                    </div>
+                    <div class="info">
+                        <div style="">
+                            <div style="display: flex;align-items: center;">
+                                <span class="user-name">dkamphuoc</span>
+                                <i class="fa fa-circle" aria-hidden="true" style="font-size: 4px;padding: 0px 5px;"></i>
+                                <span class="date">Jun, 2019</span>
+                            </div>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                                <span class="glyphicon glyphicon-star star-item"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.</p>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </section>
 </div>
-
-<section class="section">
-    <span class="title">Explorer experiences</span>
-    <div class="row content">
-                <div class="col-md-3">
-                    <div class="item-experiences">
-                        <div style="">
-                            <img src="Content/images/adventures.png" style="width: 100%" />
-                            <div class="category-title">
-                                <span class="">Adventures</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item-experiences">
-                        <div style="">
-                            <img src="Content/images/cooking_classes.png" style="width: 100%" />
-                            <div class="category-title">
-                                <span class="">Cooking classes</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item-experiences">
-                        <div style="">
-                            <img src="Content/images/surfing.png" style="width: 100%" />
-                            <div class="category-title">
-                                <span class="">Surfing</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item-experiences">
-                        <div style="">
-                            <img src="Content/images/in_cities.png" style="width: 100%" />
-                            <div class="category-title">
-                                <span class="">In Cities</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-    </div>
-</section>
-<section class="section">
-    <span class="title">Top rate experiences</span>
-    <div class="row content">
-                <div class="col-md-4">
-                    <div class="item-top-rate-experiences">
-                        <div class="container-img">
-                            <a href="Home/Details.html">
-                                <img src="Content/images/top_rate_experiences1.png" style="width: 100%" />
-                            </a>
-                            <div class="group-action">
-                                <div style="float: left">
-                                    <span>NAGOYA</span>
-                                </div>
-                                <div style="float: right">
-                                    <span>200</span>
-                                    <span class="glyphicon glyphicon-heart"></span>
-                                    <span>50</span>
-                                    <span class="glyphicon glyphicon-list-alt"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="star">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </div>
-                        <div class="description">
-                            <a href="Home/Details.html">
-                                <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item-top-rate-experiences">
-                        <div class="container-img">
-                            <a href="Home/Details.html">
-                                <img src="Content/images/top_rate_experiences2.png" style="width: 100%" />
-                            </a>
-                            <div class="group-action">
-                                <div style="float: left">
-                                    <span>NAGOYA</span>
-                                </div>
-                                <div style="float: right">
-                                    <span>200</span>
-                                    <span class="glyphicon glyphicon-heart"></span>
-                                    <span>50</span>
-                                    <span class="glyphicon glyphicon-list-alt"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="star">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </div>
-                        <div class="description">
-                            <a href="Home/Details.html">
-                                <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="item-top-rate-experiences">
-                        <div class="container-img">
-                            <a href="Home/Details.html">
-                                <img src="Content/images/top_rate_experiences3.png" style="width: 100%" />
-                            </a>
-                            <div class="group-action">
-                                <div style="float: left">
-                                    <span>NAGOYA</span>
-                                </div>
-                                <div style="float: right">
-                                    <span>200</span>
-                                    <span class="glyphicon glyphicon-heart"></span>
-                                    <span>50</span>
-                                    <span class="glyphicon glyphicon-list-alt"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="star">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </div>
-                        <div class="description">
-                            <a href="Home/Details.html">
-                                <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-    </div>
-</section>
-<section class="section">
-    <span class="title">Recommended for you</span>
-    <div class="content">
-        <div class="row">
-                    <div class="col-md-4">
-                        <div class="item-top-rate-experiences">
-                            <div class="container-img">
-                                <a href="Home/Details.html">
-                                    <img src="Content/images/recommended_for_you1.png" style="width: 100%" />
-                                </a>
-                                <div class="group-action">
-                                    <div style="float: left">
-                                        <span>NAGOYA</span>
-                                    </div>
-                                    <div style="float: right">
-                                        <span>200</span>
-                                        <span class="glyphicon glyphicon-heart"></span>
-                                        <span>50</span>
-                                        <span class="glyphicon glyphicon-list-alt"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="star">
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </div>
-                            <div class="description">
-                                <a href="Home/Details.html">
-                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="item-top-rate-experiences">
-                            <div class="container-img">
-                                <a href="Home/Details.html">
-                                    <img src="Content/images/recommended_for_you2.png" style="width: 100%" />
-                                </a>
-                                <div class="group-action">
-                                    <div style="float: left">
-                                        <span>NAGOYA</span>
-                                    </div>
-                                    <div style="float: right">
-                                        <span>200</span>
-                                        <span class="glyphicon glyphicon-heart"></span>
-                                        <span>50</span>
-                                        <span class="glyphicon glyphicon-list-alt"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="star">
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </div>
-                            <div class="description">
-                                <a href="Home/Details.html">
-                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="item-top-rate-experiences">
-                            <div class="container-img">
-                                <a href="Home/Details.html">
-                                    <img src="Content/images/recommended_for_you3.png" style="width: 100%" />
-                                </a>
-                                <div class="group-action">
-                                    <div style="float: left">
-                                        <span>NAGOYA</span>
-                                    </div>
-                                    <div style="float: right">
-                                        <span>200</span>
-                                        <span class="glyphicon glyphicon-heart"></span>
-                                        <span>50</span>
-                                        <span class="glyphicon glyphicon-list-alt"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="star">
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </div>
-                            <div class="description">
-                                <a href="Home/Details.html">
-                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-        </div>
-    </div>
-</section>
-<section class="section">
-    <span class="title">Souvenir for you</span>
-    <div class="content">
-        <div class="row">
-                    <div class="col-md-3">
-                        <div class="item-souvenir-for-you">
-                            <img class="image" src="Content/images/souvenir_for_you1.png" style="width: 100%" />
-                            <p class="description">Silver earrings 1920s, style earrings ...</p>
-                            <p class="author">nimusOne</p>
-                            <div class="star">
-                                <span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-count">(3.065)</span>
-                                </span>
-                            </div>
-                            <p class="price">USD 22.0</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item-souvenir-for-you">
-                            <img class="image" src="Content/images/souvenir_for_you2.png" style="width: 100%" />
-                            <p class="description">Silver earrings 1920s, style earrings ...</p>
-                            <p class="author">nimusOne</p>
-                            <div class="star">
-                                <span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-count">(3.065)</span>
-                                </span>
-                            </div>
-                            <p class="price">USD 22.0</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item-souvenir-for-you">
-                            <img class="image" src="Content/images/souvenir_for_you3.png" style="width: 100%" />
-                            <p class="description">Silver earrings 1920s, style earrings ...</p>
-                            <p class="author">nimusOne</p>
-                            <div class="star">
-                                <span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-count">(3.065)</span>
-                                </span>
-                            </div>
-                            <p class="price">USD 22.0</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item-souvenir-for-you">
-                            <img class="image" src="Content/images/souvenir_for_you4.png" style="width: 100%" />
-                            <p class="description">Silver earrings 1920s, style earrings ...</p>
-                            <p class="author">nimusOne</p>
-                            <div class="star">
-                                <span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-count">(3.065)</span>
-                                </span>
-                            </div>
-                            <p class="price">USD 22.0</p>
-                        </div>
-                    </div>
-
-        </div>
-    </div>
-</section>
-
 <footer>
     <div class="row">
         <div class="col-md-3">
             <div class="text-center" style="padding-bottom: 30px">
-                <a href="index.html">
-                    <img class="logo" src="Content/images/logo_number.png" style="" />
+                <a href="../index.html">
+                    <img class="logo" src="../Content/images/logo_number.png" style="" />
                 </a>
                 <div class="container-select-language">
                     <select class="select-language">
@@ -681,17 +680,17 @@
     </div>
 </div>
     </div>
-    <script src="Scripts/jquery-3.3.1.js"></script>
-    <script src="Scripts/jquery.validate.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
+    <script src="../Scripts/jquery-3.3.1.js"></script>
+    <script src="../Scripts/jquery.validate.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
 
-    <script src="AssetsLibs/common/extendDate.js"></script>
-    <script src="AssetsLibs/common/extendNumber.js"></script>
-    <script src="AssetsLibs/common/extendString.js"></script>
-    <script src="AssetsLibs/common/extendJquery.js"></script>
-    <script src="AssetsLibs/common/extendMethods.js"></script>
+    <script src="../AssetsLibs/common/extendDate.js"></script>
+    <script src="../AssetsLibs/common/extendNumber.js"></script>
+    <script src="../AssetsLibs/common/extendString.js"></script>
+    <script src="../AssetsLibs/common/extendJquery.js"></script>
+    <script src="../AssetsLibs/common/extendMethods.js"></script>
 
-    <script src="Scripts/app.js"></script>
+    <script src="../Scripts/app.js"></script>
 
     <script>$(document).ready(function () {
             app.initFrontEnd();
@@ -701,5 +700,5 @@
     
 </body>
 
-<!-- Mirrored from localhost:44382/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2019 04:48:26 GMT -->
+<!-- Mirrored from localhost:44382/Home/Profiles by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2019 04:48:34 GMT -->
 </html>

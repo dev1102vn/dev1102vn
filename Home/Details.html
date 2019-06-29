@@ -1,0 +1,868 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from localhost:44382/Home/Details by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2019 04:48:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link href="../Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Assets/libs/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+    <link href="../Content/Site.css" rel="stylesheet" />
+    
+    <style>
+        .details-container {
+            /*border-top: solid 1px #909090;*/
+            margin-top: 30px;
+            padding: 0px 0px;
+        }
+
+        .action-top {
+            padding-left: 10px;
+            display: flex;
+            position: relative;
+        }
+
+            .action-top button {
+                border: solid 1px #d0d0d0;
+                padding: 2px 12px;
+            }
+
+        .details-block {
+            border-top: solid 1px #909090;
+            padding-top: 10px;
+            margin-top: 15px;
+        }
+
+            .details-block .row-item {
+                padding-top: 5px;
+                font-size: 12px;
+            }
+
+            .details-block .description {
+                font-size: 13.5px;
+            }
+
+        .upcoming-availability {
+            max-width: 800px;
+            margin-left: 50px;
+        }
+
+            .upcoming-availability .btn-choose {
+                background-color: #00A2FF;
+                text-transform: uppercase;
+                border-radius: 0px;
+                color: white;
+                padding: 7px 20px;
+                font-size: 16px;
+            }
+
+            .upcoming-availability .title {
+                margin-top: 0px;
+                color: #00A2FF
+            }
+
+            .upcoming-availability .info {
+            }
+
+
+        .keep-mind {
+            max-width: 800px;
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .keep-mind-row {
+            display: flex;
+        }
+
+        .keep-mind-item {
+            color: #909090;
+            border-bottom: solid 1px #909090;
+            flex: 1;
+            margin-right: 25px;
+        }
+
+            .keep-mind-item .title {
+                color: #909090;
+            }
+
+        .section .content .item-top-rate-experiences .container-img {
+            position: relative
+        }
+
+        .section .content .item-top-rate-experiences .group-action {
+            background-color: rgba(0,0,0,0.4);
+            font-family: HelveticaNeueLt;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            color: white;
+            padding: 15px 15px;
+        }
+
+            .section .content .item-top-rate-experiences .group-action span {
+                padding: 0px 2px;
+            }
+
+        .section .content .item-top-rate-experiences .star {
+            padding: 5px 0px;
+        }
+
+            .section .content .item-top-rate-experiences .star span {
+                color: #00A799;
+                font-size: 12px
+            }
+
+
+        .section .content .item-top-rate-experiences .description {
+            font-family: HelveticaNeueLt;
+            font-size: 12px;
+            word-wrap: break-word;
+        }
+
+            .section .content .item-top-rate-experiences .description a {
+                color: #102746;
+            }
+
+        .booking {
+            padding: 10px 50px;
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+            .booking .btn-book-now {
+                background-color: #FF5555;
+                color: white;
+                text-transform: uppercase;
+                border-radius: 0px;
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+
+            .booking .title {
+                font-family: HelveticaNeueMedium;
+                font-size: 16px;
+                margin-right: 15px;
+            }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        
+
+
+
+<style>
+    .menu-container-top {
+        padding: 15px 30px 10px 30px;
+        width: 100%;
+        position: relative;
+        border-bottom: solid 1px #909090;
+    }
+    .menu-items1 {
+        color: white;
+        list-style: none;
+    }
+
+        .menu-items1 li {
+            display: inline-block;
+            width: fit-content;
+            padding-right: 50px;
+        }
+
+            .menu-items1 li a {
+                color: black;
+                text-decoration: none;
+                font-size: 15px;
+            }
+</style>
+<div class="menu-container-top">
+    <div class="" style="display: inline-block; position: relative">
+        <a class="" href="../index.html">
+            <img src="../Content/images/logo.png" style="width: 60px" />
+        </a>
+        <form class="" style="margin-left: 20px; display: inline-block;">
+            <div style="position: relative;border: solid 1px #d5d5d5; padding: 0px 0px 0px 15px;border-radius: 3px;">
+                <span class="glyphicon glyphicon-search"></span>
+                <input type="text" placeholder="Search" style="border: none;background: transparent; height: 34px; min-width: 220px;">
+            </div>
+        </form>
+    </div>
+    <div class="" style="display: inline-block; position: absolute; top: 50%; right: 0">
+        <ul class="menu-items1">
+            <li>
+                <a href="CreateEx.html">Host an experience</a>
+            </li>
+            <li>
+                <a href="ResultSearch.html">Trips</a>
+            </li>
+            <li>
+                <a href="ResultSearch.html">Saved</a>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="modal" data-target="#modal-sign-up">Sign up</a>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="modal" data-target="#modal-login">Login</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="details-container">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-responsive" style="margin-bottom: 20px;" src="../Content/images/details_feature.png" />
+        </div>
+        <div class="col-md-8">
+            <div style="" class="action-top">
+                <p style="font-size: 10px; font-weight: bold; font-family: HelveticaNeueMedium;position: absolute;top: 50%;">ART CLASS</p>
+                <div style="flex: 1;display: flex;justify-content: flex-end;">
+                    <button class="btn" style="margin-right: 15px;">
+                        <i class="fa fa-share-square-o" aria-hidden="true" style="color: #0093FF"></i> Share
+
+                    </button>
+                    <button class="btn" style="">
+                        <i class="fa fa-heart" aria-hidden="true" style="color: red"></i> Save
+
+                    </button>
+                </div>
+            </div>
+            <div class="details-block" style="border-width:0px; margin-top: 0px; padding-top: 0px">
+                <h3 style="color:#0093FF; font-family: HelveticaNeueMedium">Watercolor Painting Class in Hanoi</h3>
+                <div class="row row-item">
+                    <div class="col-md-6">
+                        <span class="glyphicon glyphicon-map-marker"></span>
+                        <span> Location</span>
+                    </div>
+                    <div class="col-md-6">
+                        <i class="fa fa-gift" aria-hidden="true"></i>
+                        <span> Equipment</span>
+                    </div>
+                </div>
+                <div class="row row-item">
+                    <div class="col-md-6">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span> Time total</span>
+                    </div>
+                    <div class="col-md-6">
+                        <i class="fa fa-comments" aria-hidden="true"></i>
+                        <span> Offered in English</span>
+                    </div>
+                </div>
+            </div>
+            <div class="details-block">
+                <div style="display: flex; padding-bottom: 10px;">
+                    <a href="Profiles.html">
+                        <img src="../Content/images/details_avatar.png" />
+                    </a>
+                    <div style="flex: 1; padding-left: 10px; display: flex;display: flex;align-items: center;">
+                        <div>
+                            <a href="Profiles.html">
+                                <p style="font-family: HelveticaNeueLt; font-size: 17px; margin-bottom: 0px; color: black">Michael</p>
+                            </a>
+                            <a href="Contact.html">
+                                <p style="font-family: HelveticaNeueLt; font-size: 14px; margin-bottom: 0px;color: #0093FF">Contact host</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p style="text-align: justify;" class="description">
+                        He seems to be normal as many other youngers at the first time you see him. But only after visiting his workshop with all his ink paintings and calligraphy, you will be surprised by his talent at that young age. Going to university of education with major Art, he has learnt by himself the art of ink paintings and calligraphy which was rarely chosen by other students because of its difficulty. Learning by all himself without teacher, it was really hard for him to practice but he has given all his love and passion for each step of his work.
+                    </p>
+                </div>
+            </div>
+            <div class="details-block">
+                <h4>What we’ll do</h4>
+                <p style="text-align: justify;" class="description">
+                    Watercolors offer a lot of possibilities for creative self-expression. It is an art form that creates artistic representations, usually by brush on paper, using pigments that are water-soluble. Simply the colored blocks are swiped with a wet brush and the pigment transfers itself to the watered brush and thence to the paper.
+                </p>
+            </div>
+            <div class="details-block">
+                <h4>What I’ll provide</h4>
+                <p style="text-align: justify;" class="description">
+                    Drinks
+                    <br />
+                    1 tea/coffee for each person
+                    <br />
+                    Equipment
+                    <br />
+                    All materials
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <section class="section">
+        <div style="display: flex;align-items: center;">
+            <span class="title">Guest photos</span>
+            <div class="more">
+                <a href="javascript:;">
+                    Show all photos
+                </a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="">
+                        <div class="guest-photo">
+                            <img class="img-responsive" src="../Content/images/gest_photo1.png" />
+                        </div>
+                        <div class="guest-photo">
+                            <img class="img-responsive" src="../Content/images/gest_photo2.png" />
+                        </div>
+                        <div class="guest-photo">
+                            <img class="img-responsive" src="../Content/images/gest_photo3.png" />
+                        </div>
+                        <div class="guest-photo">
+                            <img class="img-responsive" src="../Content/images/gest_photo1.png" />
+                        </div>
+                        <div class="guest-photo">
+                            <img class="img-responsive" src="../Content/images/gest_photo2.png" />
+                        </div>
+                        <div class="guest-photo">
+                            <img class="img-responsive" src="../Content/images/gest_photo3.png" />
+                        </div>
+
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div style="display: flex;align-items: center;">
+            <span class="title">Guest reviews</span>
+        </div>
+        <div class="content review">
+            <div class="star">
+                <span class="glyphicon glyphicon-star star-item"></span>
+                <span class="glyphicon glyphicon-star star-item"></span>
+                <span class="glyphicon glyphicon-star star-item"></span>
+                <span class="glyphicon glyphicon-star star-item"></span>
+                <span class="star-count">5.0</span>
+            </div>
+            <div class="comment">
+                        <div class="comment-item">
+                            <div class="user-info">
+                                <div class="avatar">
+                                    <img src="../Content/images/review_avatar.png" style="border-radius: 50px;">
+                                </div>
+                                <div class="info">
+                                    <div style="">
+                                        <div style="display: flex;align-items: center;">
+                                            <span class="user-name">dkamphuoc</span>
+                                            <i class="fa fa-circle" aria-hidden="true" style="font-size: 4px;padding: 0px 5px;"></i>
+                                            <span class="date">Jun, 2019</span>
+                                        </div>
+                                        <div class="star">
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.</p>
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="user-info">
+                                <div class="avatar">
+                                    <img src="../Content/images/review_avatar.png" style="border-radius: 50px;">
+                                </div>
+                                <div class="info">
+                                    <div style="">
+                                        <div style="display: flex;align-items: center;">
+                                            <span class="user-name">dkamphuoc</span>
+                                            <i class="fa fa-circle" aria-hidden="true" style="font-size: 4px;padding: 0px 5px;"></i>
+                                            <span class="date">Jun, 2019</span>
+                                        </div>
+                                        <div class="star">
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.</p>
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="user-info">
+                                <div class="avatar">
+                                    <img src="../Content/images/review_avatar.png" style="border-radius: 50px;">
+                                </div>
+                                <div class="info">
+                                    <div style="">
+                                        <div style="display: flex;align-items: center;">
+                                            <span class="user-name">dkamphuoc</span>
+                                            <i class="fa fa-circle" aria-hidden="true" style="font-size: 4px;padding: 0px 5px;"></i>
+                                            <span class="date">Jun, 2019</span>
+                                        </div>
+                                        <div class="star">
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.</p>
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="user-info">
+                                <div class="avatar">
+                                    <img src="../Content/images/review_avatar.png" style="border-radius: 50px;">
+                                </div>
+                                <div class="info">
+                                    <div style="">
+                                        <div style="display: flex;align-items: center;">
+                                            <span class="user-name">dkamphuoc</span>
+                                            <i class="fa fa-circle" aria-hidden="true" style="font-size: 4px;padding: 0px 5px;"></i>
+                                            <span class="date">Jun, 2019</span>
+                                        </div>
+                                        <div class="star">
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                            <span class="glyphicon glyphicon-star star-item"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.An enjoyable activity in the midst of all the Hanoi bustle. It was a great experience with my family, and definitely something I&#39;d love to do again.</p>
+                            </div>
+                        </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div style="display: flex;align-items: center;">
+            <span class="title" style="color: #00A799">Where you'll be</span>
+        </div>
+        <div class="content">
+            <img src="../Content/images/map.png" style="width: 100%" />
+        </div>
+    </section>
+    <section class="section">
+        <div style="display: flex;align-items: center;">
+            <span class="title">Upcoming availability</span>
+        </div>
+        <div class="content upcoming-availability">
+            <div style="border: solid 1px #909090; padding: 10px; display: flex;">
+                <div class="" style="flex: 1">
+                    <h3 class="title">Wed, Jun 19  |  From 3:00 PM to 5:00 PM</h3>
+                    <div class="info">
+                        <p>
+                            $29 per person</br>
+                            10 of 10 spots left
+                        </p>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <div>
+                        <button class="btn btn-choose">Choose</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-link" style="color: #00A2FF">Show more dates</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div style="display: flex;align-items: center;">
+            <span class="title">Keep these in mind</span>
+        </div>
+        <div class="content keep-mind">
+            <div class="keep-mind-row">
+                <div class="keep-mind-item">
+                    <h4 class="title">Cancellation policy</h4>
+                    <p class="keep-mind-item-content">Any experience can be canceled and fully refunded within 24 hours of purchase.</p>
+                </div>
+                <div class="keep-mind-item">
+                    <h4 class="title">Guest requirements</h4>
+                    <p class="keep-mind-item-content">Up to 10 guests ages 6 and up can attend.</p>
+                </div>
+            </div>
+            <div class="keep-mind-row">
+                <div class="keep-mind-item">
+                    <h4 class="title">Communication policy</h4>
+                    <p class="keep-mind-item-content">Any experience can be canceled and fully refunded within 24 hours of purchase.</p>
+                </div>
+                <div class="keep-mind-item">
+                    <h4 class="title">More tips</h4>
+                    <p class="keep-mind-item-content">DIY Box provides transportation service, contact for more detail For making a handicraft, it's contraindications for those who lack patience, If you do not then this is your great challenge <3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <span class="title">Similar experiences</span>
+        <div class="row content">
+                    <div class="col-md-4">
+                        <div class="item-top-rate-experiences">
+                            <div class="container-img">
+                                <a href="Details.html">
+                                    <img src="../Content/images/recommended_for_you1.png" style="width: 100%" />
+                                </a>
+                                <div class="group-action">
+                                    <div style="float: left">
+                                        <span>NAGOYA</span>
+                                    </div>
+                                    <div style="float: right">
+                                        <span>200</span>
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                        <span>50</span>
+                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </div>
+                            <div class="description">
+                                <a href="Details.html">
+                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item-top-rate-experiences">
+                            <div class="container-img">
+                                <a href="Details.html">
+                                    <img src="../Content/images/recommended_for_you2.png" style="width: 100%" />
+                                </a>
+                                <div class="group-action">
+                                    <div style="float: left">
+                                        <span>NAGOYA</span>
+                                    </div>
+                                    <div style="float: right">
+                                        <span>200</span>
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                        <span>50</span>
+                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </div>
+                            <div class="description">
+                                <a href="Details.html">
+                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item-top-rate-experiences">
+                            <div class="container-img">
+                                <a href="Details.html">
+                                    <img src="../Content/images/recommended_for_you3.png" style="width: 100%" />
+                                </a>
+                                <div class="group-action">
+                                    <div style="float: left">
+                                        <span>NAGOYA</span>
+                                    </div>
+                                    <div style="float: right">
+                                        <span>200</span>
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                        <span>50</span>
+                                        <span class="glyphicon glyphicon-list-alt"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="star">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </div>
+                            <div class="description">
+                                <a href="Details.html">
+                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+        </div>
+    </section>
+</div>
+<div class="booking">
+    <div style="display: flex; justify-content: flex-end">
+        <div>
+            <span class="title">$35 per person 3 hours</span>
+            <a href="ReviewPay.html" class="btn btn-book-now">Book Now</a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="text-center" style="padding-bottom: 30px">
+                <a href="../index.html">
+                    <img class="logo" src="../Content/images/logo_number.png" style="" />
+                </a>
+                <div class="container-select-language">
+                    <select class="select-language">
+                        <option>English</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="menu">
+                        <p class="menu-title">1102</p>
+
+                        <ul>
+                            <li><a href="javascript:;">About us</a></li>
+                            <li><a href="javascript:;">Careers</a></li>
+                            <li><a href="javascript:;">Press</a></li>
+                            <li><a href="javascript:;">Policies</a></li>
+                            <li><a href="javascript:;">Help</a></li>
+                            <li><a href="javascript:;">Diversity</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="menu">
+                        <p class="menu-title">Discover</p>
+
+                        <ul>
+                            <li><a href="javascript:;">Trust & Safety</a></li>
+                            <li><a href="javascript:;">Travel Credit</a></li>
+                            <li><a href="javascript:;">1102 Citizen</a></li>
+                            <li><a href="javascript:;">Bussiness Travel</a></li>
+                            <li><a href="javascript:;">Guidebooks</a></li>
+                            <li><a href="javascript:;"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="menu">
+                        <p class="menu-title">Hosting</p>
+
+                        <ul>
+                            <li><a href="javascript:;">Why Host</a></li>
+                            <li><a href="javascript:;">Hospitality</a></li>
+                            <li><a href="javascript:;">Responsible Hosting</a></li>
+                            <li><a href="javascript:;">Community Centre</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 100%; border-top-style: solid;border-top-color: #909090; border-top-width: 1px; margin: 20px 0px"></div>
+    <div class="">
+        <div class="pull-left">
+            <p class="copy-right">© 2019 1102, Inc. All rights reserved.</p>
+        </div>
+        <div class="pull-right">
+            <ul class="list-unstyled list-inline site-map">
+                <li><a herf="javascript:;">Terms Map</a></li>
+                <li><a herf="javascript:;">Privacy</a></li>
+                <li><a herf="javascript:;">Site</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<style>
+    #modal-login {
+    }
+
+        #modal-login .modal-content {
+            border-radius: 0px;
+        }
+
+        #modal-login .btn-social {
+            width: 100%;
+            font-family: HelveticaNeueMedium;
+        }
+</style>
+<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            
+            <div class="modal-body">
+                <div>
+                    <button class="btn btn-social" style="color: white; background-color: #3C67B8">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        Continue with Facebook
+                    </button>
+                </div>
+                <div style="margin-top: 10px">
+                    <button class="btn btn-social" style="color: black; border: solid 1px #909090">
+                        <i class="fa fa-google" aria-hidden="true" style="color: red"></i>
+                        Continue with Google
+                    </button>
+                </div>
+                <hr class="hr-text" data-content="or">
+                <div style="margin-top: 10px">
+                    <button class="btn btn-social" style="color: white; background-color: #FF4858">
+                        <i class="fa fa-envelope-o" aria-hidden="true" style="color: white"></i>
+                        Sign up with Email
+                    </button>
+                </div>
+                <hr />
+
+                <div>
+                    <span>Aready have an 1102 account?</span><strong style="color: #009BFB; font-family: HelveticaNeueMedium"> Login</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    #modal-sign-up {
+    }
+
+        #modal-sign-up .modal-content {
+            border-radius: 0px;
+        }
+
+        #modal-sign-up .title {
+            font-family: HelveticaNeueMedium;
+        }
+
+        #modal-sign-up .label-text {
+            color: #009BFB;
+            font-family: HelveticaNeueMedium;
+        }
+
+        #modal-sign-up .input-row {
+            margin-top: 10px;
+        }
+
+    .btn-social {
+        width: 100%;
+        font-family: HelveticaNeueMedium;
+    }
+</style>
+<div class="modal fade" id="modal-sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div style="text-align: center">
+                    <span class="title">
+                        Sign up with <span class="label-text">Facebook</span> or <span class="label-text">Google</span>
+                    </span>
+                </div>
+
+                <hr class="hr-text" data-content="or">
+                <form>
+                    <div class="input-row">
+                        <input class="form-control" type="text" placeholder="Email address" />
+                    </div>
+                    <div class="input-row">
+                        <input class="form-control" type="text" placeholder="First name" />
+                    </div>
+                    <div class="input-row">
+                        <input class="form-control" type="text" placeholder="Last name" />
+                    </div>
+                    <div class="input-row">
+                        <input class="form-control" type="text" placeholder="Create password name" />
+                    </div>
+                    <p class="label-text" ; style="color: black; margin-top: 10px">Birthday</p>
+                    <p style="">
+                        To sign up, you must be 10 or older. Other people won't see your birthday.
+                    </p>
+
+                    <div style="display: flex">
+                        <div style="flex: 1; padding-right: 5px">
+                            <input class="form-control" type="text" placeholder="Month" />
+                        </div>
+                        <div style="flex: 1; padding-right: 5px">
+                            <input class="form-control" type="text" placeholder="Day" />
+                        </div>
+                        <div style="flex: 1; padding-right: 5px">
+                            <input class="form-control" type="text" placeholder="Year" />
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 10px;">
+                        We'll send you marketing promotions, special offers, inspiration, and policy updates via email.
+                    </p>
+                    <div style="margin-top: 10px">
+                        <button class="btn" style="color: white; background-color: #FD6666; width:100%; font-size: 19px">
+                            Sign up
+                        </button>
+                    </div>
+                    <div style="margin-top: 10px">
+                        <label class="checkbox-radio-custom">
+                            <span></span>
+                            <input type="checkbox" />
+                        </label>
+                        <span>
+                            I don't want to recevie marketing messages from 1102. I can also opt out of receving these at any time in my account settings or via the link in the message.
+                        </span>
+                    </div>
+                </form>
+                <hr />
+
+                <div>
+                    <span>Aready have an 1102 account?</span><strong style="color: #009BFB; font-family: HelveticaNeueMedium"> Login</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="../Scripts/jquery-3.3.1.js"></script>
+    <script src="../Scripts/jquery.validate.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+
+    <script src="../AssetsLibs/common/extendDate.js"></script>
+    <script src="../AssetsLibs/common/extendNumber.js"></script>
+    <script src="../AssetsLibs/common/extendString.js"></script>
+    <script src="../AssetsLibs/common/extendJquery.js"></script>
+    <script src="../AssetsLibs/common/extendMethods.js"></script>
+
+    <script src="../Scripts/app.js"></script>
+
+    <script>$(document).ready(function () {
+            app.initFrontEnd();
+
+        });</script>
+
+    
+</body>
+
+<!-- Mirrored from localhost:44382/Home/Details by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2019 04:48:33 GMT -->
+</html>
