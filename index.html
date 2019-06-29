@@ -1,705 +1,571 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="zxx">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>STAPPS869</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" media="all" />
+		<!-- Slick nav CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slicknav.min.css" media="all" />
+		<!-- Iconfont CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/icofont.css" media="all" />
+		<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
 
-<!-- Mirrored from localhost:44382/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2019 04:48:18 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
-    <link href="Content/bootstrap.css" rel="stylesheet" />
-    <link href="Assets/libs/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
-
-    <link href="Content/Site.css" rel="stylesheet" />
-    
-    <style>
-        .container-banner {
-            width: 100%;
-            height: 800px;
-            /*background: rgba(255, 0, 0, 0.25), url('/Content/images/banner.png');*/
-            background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('Content/images/banner.png');
-            background-position: center bottom;
-        }
-
-            .container-banner .banner-form {
-                margin-left: 80px;
-                margin-top: 150px;
-                background-color: rgba(0, 168, 255, 0.8);
-                padding: 15px;
-                display: inline-block;
-            }
-
-                .container-banner .banner-form span {
-                    color: white;
-                    font-family: HelveticaNeueMedium
-                }
-
-                .container-banner .banner-form .title {
-                    font-size: 23px
-                }
-
-                .container-banner .banner-form label {
-                    font-family: HelveticaNeue;
-                    color: white;
-                    margin-top: 20px;
-                    font-size: 18px;
-                }
-
-                .container-banner .banner-form input {
-                    width: 100%;
-                    background: transparent;
-                    border: solid 1px white;
-                    color: white;
-                    padding: 8px 10px;
-                    font-family: HelveticaNeueMedium
-                }
-
-                .container-banner .banner-form .btn-search {
-                    color: #00A5FF;
-                    padding: 5px 30px;
-                    background-color: white;
-                    font-size: 19px;
-                    text-transform: uppercase;
-                    font-family: HelveticaNeueThin;
-                    border: transparent;
-                    font-weight: bold;
-                }
-    </style>
-
-</head>
-<body>
-    <div class="container">
-        
-
-
-<div class="container-banner">
-<style>
-    .menu-items1 {
-        color: white;
-        list-style: none;
-    }
-
-        .menu-items1 li {
-            display: inline-block;
-            width: fit-content;
-            padding-right: 50px;
-        }
-
-            .menu-items1 li a {
-                color: white;
-                text-decoration: none;
-                font-size: 15px;
-            }
-</style>
-<div style="padding:15px 30px 0px 30px;top: 0; width: 100%">
-    <div class="pull-left">
-        <a href="index.html">
-            <img src="Content/images/logo.png" style="width: 60px" />
-        </a>
-    </div>
-    <div class="pull-right" style="padding: 22px 0px 0px 0px">
-        <ul class="menu-items1">
-            <li>
-                <a href="Home/CreateEx.html">Host an experience</a>
-            </li>
-            <li>
-                <a href="Home/ResultSearch.html">Trips</a>
-            </li>
-            <li>
-                <a href="Home/ResultSearch.html">Saved</a>
-            </li>
-            <li>
-                <a href="javascript:;" data-toggle="modal" data-target="#modal-sign-up">Sign up</a>
-            </li>
-            <li>
-                <a href="javascript:;" data-toggle="modal" data-target="#modal-login">Login</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="clearfix"></div>
-</div>
-
-    <div class="banner-form">
-        <form>
-            <span class="title">Book unique places to stay and things to do.</span>
-            <div style="padding: 10px;">
-                <div>
-                    <label>Where</label>
-                    <input type="text" value="Anywhere" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<!-- Owl carousel CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+		<!-- Popup CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css">
+		<!-- Switcher CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/switcher-style.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+		<!-- Main style CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all" />
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="all" />
+		<!-- Favicon Icon -->
+		<link rel="icon" type="image/png" href="assets/img/favcion.png" />
+	
+	</head>
+	<body data-spy="scroll" data-target=".header" data-offset="50">
+		<!-- Page loader -->
+	    <div id="preloader"></div>
+		<!-- header section start -->
+		<header class="header">
+            <div class="container">
+                <!-- Load Facebook SDK for JavaScript -->
+                <div id="fb-root"></div>
+                <script>
+                    window.fbAsyncInit = function() {
+                        FB.init({
+                                xfbml            : true,
+                                version          : 'v3.2'
+                                });
+                    };
+                
+                (function(d, s, id) {
+                 var js, fjs = d.getElementsByTagName(s)[0];
+                 if (d.getElementById(id)) return;
+                 js = d.createElement(s); js.id = id;
+                 js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                 fjs.parentNode.insertBefore(js, fjs);
+                 }(document, 'script', 'facebook-jssdk'));</script>
+                
+                <!-- Your customer chat code -->
+                <div class="fb-customerchat"
+                    attribution=setup_tool
+                    page_id="786183231517231">
                 </div>
-                <div>
-                    <label>Guests</label>
-                    <input type="text" value="Guests" />
-                </div>
-                <div style="width: 100%; text-align: center; margin-top: 30px">
-                    <a href="Home/ResultSearch.html" type="button" class="btn-search">Search</a>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-
-<section class="section">
-    <span class="title">Explorer experiences</span>
-    <div class="row content">
-                <div class="col-md-3">
-                    <div class="item-experiences">
-                        <div style="">
-                            <img src="Content/images/adventures.png" style="width: 100%" />
-                            <div class="category-title">
-                                <span class="">Adventures</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item-experiences">
-                        <div style="">
-                            <img src="Content/images/cooking_classes.png" style="width: 100%" />
-                            <div class="category-title">
-                                <span class="">Cooking classes</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item-experiences">
-                        <div style="">
-                            <img src="Content/images/surfing.png" style="width: 100%" />
-                            <div class="category-title">
-                                <span class="">Surfing</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="item-experiences">
-                        <div style="">
-                            <img src="Content/images/in_cities.png" style="width: 100%" />
-                            <div class="category-title">
-                                <span class="">In Cities</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-    </div>
-</section>
-<section class="section">
-    <span class="title">Top rate experiences</span>
-    <div class="row content">
-                <div class="col-md-4">
-                    <div class="item-top-rate-experiences">
-                        <div class="container-img">
-                            <a href="Home/Details.html">
-                                <img src="Content/images/top_rate_experiences1.png" style="width: 100%" />
-                            </a>
-                            <div class="group-action">
-                                <div style="float: left">
-                                    <span>NAGOYA</span>
+				<div class="row flexbox-center">
+					<div class="col-lg-2 col-md-3 col-6">
+						<div class="logo">
+							<a href="#home"><img src="assets/img/logo.png" alt="logo" /></a>
+						</div>
+					</div>
+					<div class="col-lg-10 col-md-9 col-6">
+						<div class="responsive-menu"></div>
+					    <div class="mainmenu">
+                            <ul id="primary-menu">
+                                <li><a class="nav-link active" href="#home">Home</a></li>
+                                <li><a class="nav-link" href="#screenshot">Screenshot</a></li>
+                                <li><a class="nav-link" href="#team">Team</a></li>
+                                <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                            </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</header><!-- header section end -->
+		<!-- hero area start -->
+		<section class="hero-area" id="home">
+			<div class="hero-area-slider">
+				<div class="hero-area-single-slide">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="hero-area-content">
+									<h1>Offline Files - File Manager</h1><br />
+                                    <p>It has a built-in file manager, with robust viewer for all iOS supported document types, powerful photo browser, advanced PDF reader...<br />
+                                    <br />
+                                    ● Download manager<br />
+                                    - Fast downloading speed<br />
+                                    - Supports resuming of interrupted downloads reliably<br />
+                                    - Live download progress bar and speed indicator<br />
+                                    - Active downloads badge number<br />
+                                    - Add arbitrary download link<br />
+                                    - Always download with correct filename</p>
+									<a href="https://itunes.apple.com/uz/app/offline-files-file-manager/id1449464045" target="_blank" class="appao-btn">App Store</a>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="hand-mockup text-lg-left text-center">
+									<img src="assets/img/idownloader.png" alt="Offline Files" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero-area-single-slide">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="hero-area-content">
+									<h1>Contacts Backup - Restore.</h1><br />
+                                    <p>BACKUP<br /><br />
+                                    ● One tap to backup your contacts!<br />
+                                    ● Quickly export your backups to Email<br />
+                                    ● Keep your contacts safe in the cloud!<br />
+                                    ● Easily restore your contacts from any mobile device!<br />
+                                    ● Backup Contacts as VCF (VCard) or Export Contacts as CSV (Excel) file</p>
+									<a href="https://itunes.apple.com/uz/app/contacts-backup-restore/id1449237972?mt=8" target="_blank"  class="appao-btn">App Store</a>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="hand-mockup text-lg-left text-center">
+									<img src="assets/img/contactbackup.png" alt="Contacts Backup" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero-area-single-slide">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="hero-area-content">
+									<h1>Flipper Rotate - Photo Resizer</h1><br />
+                                    <p>Simple and easy photo editing App!<br />
+                                    Flipper Rotate smooth, intuitive process gives you complete creative control. Tap to select style of mirror, scroll to positioning, pinch to zoom in or out. You're the editor, change the look of your regular photos to convey a mood or theme.<br />
+                                    <br />
+                                    - Just swipe to flip a photo… left to right, or up and down - perfect for flipping "mirror" selfies, or rotate with 2 fingers.<br />
+                                    - Select photo from your albums or take a photo, and automatically turn it into a photo with mirror effects.<br />
+                                    - Pick one of the 36 unique mirroring effects.<br />
+                                    - Enlarge, Shrink, Move, and use gestures to make mirror images.</p>
+									<a href="https://itunes.apple.com/uz/app/flipper-rotate-photo-resizer/id1450784063" target="_blank" class="appao-btn">App Store</a>
+								</div>
+							</div>
+							<div class="col-lg-5">
+								<div class="hand-mockup text-lg-left text-center">
+									<img src="assets/img/flipperrotate.png" alt="Flipper Rotate" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="hero-area-single-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="hero-area-content">
+                                    <h1>BMR - Diet Marcos Tracker</h1><br />
+                                    <p>The results show you how many calories you need to eat a day in order to maintain your weight, but if you're trying to gain or lose weight you need to adjust your daily calorie intake as well as your activity level.
+                                    <br /><br />
+                                    This simple, easy-to-use interface calculates your BMR. What is BMR? That’s simple, your basal metabolic rate is an estimation of how many calories your body would burn while at rest for a full day.
+                                    <br /><br />
+                                    In this app, we guide you through entering your height, weight, age, and gender to provide you with your BMR. In the last step of this calculator, you can see how different activity levels and your BMR affect the amount of calories you should consume every day.</p>
+                                    <a href="https://itunes.apple.com/uz/app/bmr-diet-marcos-tracker/id1448081730" target="_blank"  class="appao-btn">App Store</a>
                                 </div>
-                                <div style="float: right">
-                                    <span>200</span>
-                                    <span class="glyphicon glyphicon-heart"></span>
-                                    <span>50</span>
-                                    <span class="glyphicon glyphicon-list-alt"></span>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="hand-mockup text-lg-left text-center">
+                                    <img src="assets/img/diettracker.png" alt="BMR" />
                                 </div>
                             </div>
                         </div>
-                        <div class="star">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </div>
-                        <div class="description">
-                            <a href="Home/Details.html">
-                                <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                            </a>
-                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="item-top-rate-experiences">
-                        <div class="container-img">
-                            <a href="Home/Details.html">
-                                <img src="Content/images/top_rate_experiences2.png" style="width: 100%" />
-                            </a>
-                            <div class="group-action">
-                                <div style="float: left">
-                                    <span>NAGOYA</span>
+                <div class="hero-area-single-slide">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="hero-area-content">
+                                    <h1>Frame Photo - New Year Photo</h1><br />
+                                    <p>Frame Photos helps you combine multiple photos into frames, can frame all the special moments in your life and share them with your friends and family.
+                                    <br /><br />
+                                    Select your photo from gallery or capture new photo from camera.<br />
+                                    Select single or dual photo frame from the collection.
+                                    <br /><br />
+                                    Photo frames and collage maker app with best pic editor tool to keep your memorable pictures in frames, photo in photo and magazine pip style.</p>
+                                    <a href="https://itunes.apple.com/uz/app/frame-photo-new-year-photo/id1446554655" target="_blank"  class="appao-btn">App Store</a>
                                 </div>
-                                <div style="float: right">
-                                    <span>200</span>
-                                    <span class="glyphicon glyphicon-heart"></span>
-                                    <span>50</span>
-                                    <span class="glyphicon glyphicon-list-alt"></span>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="hand-mockup text-lg-left text-center">
+                                    <img src="assets/img/photoframe.png" alt="Frame Photo" />
                                 </div>
                             </div>
                         </div>
-                        <div class="star">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </div>
-                        <div class="description">
-                            <a href="Home/Details.html">
-                                <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                            </a>
-                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="item-top-rate-experiences">
-                        <div class="container-img">
-                            <a href="Home/Details.html">
-                                <img src="Content/images/top_rate_experiences3.png" style="width: 100%" />
-                            </a>
-                            <div class="group-action">
-                                <div style="float: left">
-                                    <span>NAGOYA</span>
-                                </div>
-                                <div style="float: right">
-                                    <span>200</span>
-                                    <span class="glyphicon glyphicon-heart"></span>
-                                    <span>50</span>
-                                    <span class="glyphicon glyphicon-list-alt"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="star">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </div>
-                        <div class="description">
-                            <a href="Home/Details.html">
-                                <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-    </div>
-</section>
-<section class="section">
-    <span class="title">Recommended for you</span>
-    <div class="content">
-        <div class="row">
-                    <div class="col-md-4">
-                        <div class="item-top-rate-experiences">
-                            <div class="container-img">
-                                <a href="Home/Details.html">
-                                    <img src="Content/images/recommended_for_you1.png" style="width: 100%" />
-                                </a>
-                                <div class="group-action">
-                                    <div style="float: left">
-                                        <span>NAGOYA</span>
-                                    </div>
-                                    <div style="float: right">
-                                        <span>200</span>
-                                        <span class="glyphicon glyphicon-heart"></span>
-                                        <span>50</span>
-                                        <span class="glyphicon glyphicon-list-alt"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="star">
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </div>
-                            <div class="description">
-                                <a href="Home/Details.html">
-                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="item-top-rate-experiences">
-                            <div class="container-img">
-                                <a href="Home/Details.html">
-                                    <img src="Content/images/recommended_for_you2.png" style="width: 100%" />
-                                </a>
-                                <div class="group-action">
-                                    <div style="float: left">
-                                        <span>NAGOYA</span>
-                                    </div>
-                                    <div style="float: right">
-                                        <span>200</span>
-                                        <span class="glyphicon glyphicon-heart"></span>
-                                        <span>50</span>
-                                        <span class="glyphicon glyphicon-list-alt"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="star">
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </div>
-                            <div class="description">
-                                <a href="Home/Details.html">
-                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="item-top-rate-experiences">
-                            <div class="container-img">
-                                <a href="Home/Details.html">
-                                    <img src="Content/images/recommended_for_you3.png" style="width: 100%" />
-                                </a>
-                                <div class="group-action">
-                                    <div style="float: left">
-                                        <span>NAGOYA</span>
-                                    </div>
-                                    <div style="float: right">
-                                        <span>200</span>
-                                        <span class="glyphicon glyphicon-heart"></span>
-                                        <span>50</span>
-                                        <span class="glyphicon glyphicon-list-alt"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="star">
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                                <span class="glyphicon glyphicon-star"></span>
-                            </div>
-                            <div class="description">
-                                <a href="Home/Details.html">
-                                    <p class="">Jump off balcony, onto stranger&#39;s head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the ...</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-        </div>
-    </div>
-</section>
-<section class="section">
-    <span class="title">Souvenir for you</span>
-    <div class="content">
-        <div class="row">
-                    <div class="col-md-3">
-                        <div class="item-souvenir-for-you">
-                            <img class="image" src="Content/images/souvenir_for_you1.png" style="width: 100%" />
-                            <p class="description">Silver earrings 1920s, style earrings ...</p>
-                            <p class="author">nimusOne</p>
-                            <div class="star">
-                                <span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-count">(3.065)</span>
-                                </span>
-                            </div>
-                            <p class="price">USD 22.0</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item-souvenir-for-you">
-                            <img class="image" src="Content/images/souvenir_for_you2.png" style="width: 100%" />
-                            <p class="description">Silver earrings 1920s, style earrings ...</p>
-                            <p class="author">nimusOne</p>
-                            <div class="star">
-                                <span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-count">(3.065)</span>
-                                </span>
-                            </div>
-                            <p class="price">USD 22.0</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item-souvenir-for-you">
-                            <img class="image" src="Content/images/souvenir_for_you3.png" style="width: 100%" />
-                            <p class="description">Silver earrings 1920s, style earrings ...</p>
-                            <p class="author">nimusOne</p>
-                            <div class="star">
-                                <span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-count">(3.065)</span>
-                                </span>
-                            </div>
-                            <p class="price">USD 22.0</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="item-souvenir-for-you">
-                            <img class="image" src="Content/images/souvenir_for_you4.png" style="width: 100%" />
-                            <p class="description">Silver earrings 1920s, style earrings ...</p>
-                            <p class="author">nimusOne</p>
-                            <div class="star">
-                                <span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-item glyphicon glyphicon-star"></span>
-                                    <span class="star-count">(3.065)</span>
-                                </span>
-                            </div>
-                            <p class="price">USD 22.0</p>
-                        </div>
-                    </div>
-
-        </div>
-    </div>
-</section>
-
-<footer>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="text-center" style="padding-bottom: 30px">
-                <a href="index.html">
-                    <img class="logo" src="Content/images/logo_number.png" style="" />
-                </a>
-                <div class="container-select-language">
-                    <select class="select-language">
-                        <option>English</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-9">
-            <div class="row">
-                <div class="col-xs-4">
-                    <div class="menu">
-                        <p class="menu-title">1102</p>
-
-                        <ul>
-                            <li><a href="javascript:;">About us</a></li>
-                            <li><a href="javascript:;">Careers</a></li>
-                            <li><a href="javascript:;">Press</a></li>
-                            <li><a href="javascript:;">Policies</a></li>
-                            <li><a href="javascript:;">Help</a></li>
-                            <li><a href="javascript:;">Diversity</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-4">
-                    <div class="menu">
-                        <p class="menu-title">Discover</p>
-
-                        <ul>
-                            <li><a href="javascript:;">Trust & Safety</a></li>
-                            <li><a href="javascript:;">Travel Credit</a></li>
-                            <li><a href="javascript:;">1102 Citizen</a></li>
-                            <li><a href="javascript:;">Bussiness Travel</a></li>
-                            <li><a href="javascript:;">Guidebooks</a></li>
-                            <li><a href="javascript:;"></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xs-4">
-                    <div class="menu">
-                        <p class="menu-title">Hosting</p>
-
-                        <ul>
-                            <li><a href="javascript:;">Why Host</a></li>
-                            <li><a href="javascript:;">Hospitality</a></li>
-                            <li><a href="javascript:;">Responsible Hosting</a></li>
-                            <li><a href="javascript:;">Community Centre</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div style="width: 100%; border-top-style: solid;border-top-color: #909090; border-top-width: 1px; margin: 20px 0px"></div>
-    <div class="">
-        <div class="pull-left">
-            <p class="copy-right">© 2019 1102, Inc. All rights reserved.</p>
-        </div>
-        <div class="pull-right">
-            <ul class="list-unstyled list-inline site-map">
-                <li><a herf="javascript:;">Terms Map</a></li>
-                <li><a herf="javascript:;">Privacy</a></li>
-                <li><a herf="javascript:;">Site</a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-
-<style>
-    #modal-login {
-    }
-
-        #modal-login .modal-content {
-            border-radius: 0px;
-        }
-
-        #modal-login .btn-social {
-            width: 100%;
-            font-family: HelveticaNeueMedium;
-        }
-</style>
-<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
+			</div>
+            <!------------- -->
             
-            <div class="modal-body">
-                <div>
-                    <button class="btn btn-social" style="color: white; background-color: #3C67B8">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        Continue with Facebook
-                    </button>
-                </div>
-                <div style="margin-top: 10px">
-                    <button class="btn btn-social" style="color: black; border: solid 1px #909090">
-                        <i class="fa fa-google" aria-hidden="true" style="color: red"></i>
-                        Continue with Google
-                    </button>
-                </div>
-                <hr class="hr-text" data-content="or">
-                <div style="margin-top: 10px">
-                    <button class="btn btn-social" style="color: white; background-color: #FF4858">
-                        <i class="fa fa-envelope-o" aria-hidden="true" style="color: white"></i>
-                        Sign up with Email
-                    </button>
-                </div>
-                <hr />
-
-                <div>
-                    <span>Aready have an 1102 account?</span><strong style="color: #009BFB; font-family: HelveticaNeueMedium"> Login</strong>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<style>
-    #modal-sign-up {
-    }
-
-        #modal-sign-up .modal-content {
-            border-radius: 0px;
-        }
-
-        #modal-sign-up .title {
-            font-family: HelveticaNeueMedium;
-        }
-
-        #modal-sign-up .label-text {
-            color: #009BFB;
-            font-family: HelveticaNeueMedium;
-        }
-
-        #modal-sign-up .input-row {
-            margin-top: 10px;
-        }
-
-    .btn-social {
-        width: 100%;
-        font-family: HelveticaNeueMedium;
-    }
-</style>
-<div class="modal fade" id="modal-sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div style="text-align: center">
-                    <span class="title">
-                        Sign up with <span class="label-text">Facebook</span> or <span class="label-text">Google</span>
-                    </span>
-                </div>
-
-                <hr class="hr-text" data-content="or">
-                <form>
-                    <div class="input-row">
-                        <input class="form-control" type="text" placeholder="Email address" />
+		</section><!-- hero area end -->
+		<!-- about section start -->
+		<section class="about-area ptb-90">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>About STAPPS869<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>To offer full-stack solutions and services that can unlock the full potential of our partners and customers.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4">
+					    <div class="single-about-box">
+							<i class="icofont icofont-ruler-pencil"></i>
+							<h4>Responsive Design</h4>
+							<p>Our Creative App Development MA, taught by specialists in creative computing, interactive and design practice, provides the chance to expand on your creative skills and take advantage of the opportunities available in this growing field.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+					    <div class="single-about-box active">
+							<i class="icofont icofont-computer"></i>
+							<h4>Fast Performance</h4>
+							<p>Our Creative App Development MA, taught by specialists in creative computing, interactive and design practice, provides the chance to expand on your creative skills and take advantage of the opportunities available in this growing field.</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+					    <div class="single-about-box">
+							<i class="icofont icofont-headphone-alt"></i>
+							<h4>Cross Platfrom</h4>
+							<p>Our Creative App Development MA, taught by specialists in creative computing, interactive and design practice, provides the chance to expand on your creative skills and take advantage of the opportunities available in this growing field.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- about section end -->
+		<!-- screenshots section start -->
+		<section class="screenshots-area ptb-90" id="screenshot">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>Screenshot<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>To offer full-stack solutions and services that can unlock the full potential of our partners and customers.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="screenshot-wrap">
+							<div class="single-screenshot">
+								<img src="assets/img/screenshot/screenshot1.jpg" alt="screenshot" />
+							</div>
+							<div class="single-screenshot">
+								<img src="assets/img/screenshot/screenshot2.jpg" alt="screenshot" />
+							</div>
+							<div class="single-screenshot">
+								<img src="assets/img/screenshot/screenshot3.jpg" alt="screenshot" />
+							</div>
+							<div class="single-screenshot">
+								<img src="assets/img/screenshot/screenshot4.jpg" alt="screenshot" />
+							</div>
+							<div class="single-screenshot">
+								<img src="assets/img/screenshot/screenshot5.jpg" alt="screenshot" />
+							</div>
+                            <div class="single-screenshot">
+                                <img src="assets/img/screenshot/screenshot6.jpg" alt="screenshot" />
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- screenshots section end -->
+		<!-- counter section start -->
+		<section class="counter-area ptb-90">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+					    <div class="single-counter-box">
+							<i class="icofont icofont-heart-alt"></i>
+							<h1><span class="counter">9798</span></h1>
+							<p>Happy Client</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+					    <div class="single-counter-box">
+							<i class="icofont icofont-protect"></i>
+							<h1><span class="counter">9798</span></h1>
+							<p>Completed Project</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+					    <div class="single-counter-box">
+							<i class="icofont icofont-download-alt"></i>
+							<h1><span class="counter">979</span>K</h1>
+							<p>Apps Download</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+					    <div class="single-counter-box">
+							<i class="icofont icofont-trophy"></i>
+							<h1><span class="counter">250</span></h1>
+							<p>Our Award</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- counter section end -->
+		<!-- team section start -->
+		<section class="team-area ptb-90" id="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>Meet Our Team<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>To offer full-stack solutions and services that can unlock the full potential of our partners and customers.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-sm-6">
+					    <div class="single-team-member">
+							<div class="team-member-img">
+								<img src="assets/img/team/team1.jpg" alt="team">
+								<div class="team-member-icon">
+									<div class="display-table">
+										<div class="display-tablecell">
+											<a href="#"><i class="icofont icofont-social-facebook"></i></a>
+											<a href="#"><i class="icofont icofont-social-twitter"></i></a>
+											<a href="#"><i class="icofont icofont-brand-linkedin"></i></a>
+											<a href="#"><i class="icofont icofont-social-pinterest"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-member-info">
+								<a href="#"><h4>John Deo</h4></a>
+								<p>Web Developer</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+					    <div class="single-team-member">
+							<div class="team-member-img">
+								<img src="assets/img/team/team2.jpg" alt="team">
+								<div class="team-member-icon">
+									<div class="display-table">
+										<div class="display-tablecell">
+											<a href="#"><i class="icofont icofont-social-facebook"></i></a>
+											<a href="#"><i class="icofont icofont-social-twitter"></i></a>
+											<a href="#"><i class="icofont icofont-brand-linkedin"></i></a>
+											<a href="#"><i class="icofont icofont-social-pinterest"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-member-info">
+								<a href="#"><h4>Sharon Garcia</h4></a>
+								<p>App Developer</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+					    <div class="single-team-member">
+							<div class="team-member-img">
+								<img src="assets/img/team/team3.jpg" alt="team">
+								<div class="team-member-icon">
+									<div class="display-table">
+										<div class="display-tablecell">
+											<a href="#"><i class="icofont icofont-social-facebook"></i></a>
+											<a href="#"><i class="icofont icofont-social-twitter"></i></a>
+											<a href="#"><i class="icofont icofont-brand-linkedin"></i></a>
+											<a href="#"><i class="icofont icofont-social-pinterest"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-member-info">
+								<a href="#"><h4>Elijah Henderson</h4></a>
+								<p>UX Designer</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+					    <div class="single-team-member">
+							<div class="team-member-img">
+								<img src="assets/img/team/team4.jpg" alt="team">
+								<div class="team-member-icon">
+									<div class="display-table">
+										<div class="display-tablecell">
+											<a href="#"><i class="icofont icofont-social-facebook"></i></a>
+											<a href="#"><i class="icofont icofont-social-twitter"></i></a>
+											<a href="#"><i class="icofont icofont-brand-linkedin"></i></a>
+											<a href="#"><i class="icofont icofont-social-pinterest"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="team-member-info">
+								<a href="#"><h4>Sharon Garcia</h4></a>
+								<p>UX Designer</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- team section end -->
+		<!-- download section start -->
+		<section class="download-area ptb-90">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="sec-title">
+							<h2>Download Available<span class="sec-title-border"><span></span><span></span><span></span></span></h2>
+							<p>DOWNLOAD NOW - EXPRIENCE - ENJOYING</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<ul>
+							<li>
+								<a href="#" class="download-btn flexbox-center">
+									<div class="download-btn-icon">
+										<i class="icofont icofont-brand-android-robot"></i>
+									</div>
+									<div class="download-btn-text">
+										<p>Coming soon</p>
+										<h4>Android Store</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="download-btn flexbox-center">
+									<div class="download-btn-icon">
+										<i class="icofont icofont-brand-apple"></i>
+									</div>
+									<div class="download-btn-text">
+										<p>Available on</p>
+										<h4>Apple Store</h4>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="download-btn flexbox-center">
+									<div class="download-btn-icon">
+										<i class="icofont icofont-brand-windows"></i>
+									</div>
+									<div class="download-btn-text">
+										<p>Coming soon</p>
+										<h4>Windows Store</h4>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section><!-- download section end -->
+		<!-- footer section start -->
+		<footer class="footer" id="contact">
+			<div class="container">
+				<div class="row">
+                    <div class="col-lg-6">
+						<div class="contact-form">
+							<h4>Get in Touch</h4>
+							<p class="form-message"></p>
+							<form id="contact-form" action="#" method="POST">
+				                <input type="text" name="name" placeholder="Enter Your Name">
+				                <input type="email" name="email" placeholder="Enter Your Email">
+				                <input type="text" name="subject" placeholder="Your Subject">
+				                <textarea placeholder="Messege" name="message"></textarea>
+				                <button type="submit" name="submit">Send Message</button>
+				            </form>
+						</div>
                     </div>
-                    <div class="input-row">
-                        <input class="form-control" type="text" placeholder="First name" />
+                    <div class="col-lg-6">
+						<div class="contact-address">
+							<h4>Address</h4>
+							<p>Thank for your continued support and feedback! We're committed the app even better, so newer lost the drive to share your impressions and feedback with us!</p>
+							<ul>
+								<li>
+									<div class="contact-address-icon">
+										<i class="icofont icofont-headphone-alt"></i>
+									</div>
+									<div class="contact-address-info">
+										<a href="callto:#">+84982862286</a>
+										<a href="callto:#">+84935889868</a>
+									</div>
+								</li>
+								<li>
+									<div class="contact-address-icon">
+										<i class="icofont icofont-envelope"></i>
+									</div>
+									<div class="contact-address-info">
+										<a href="mailto:#">stapps869@gmail.com</a>
+									</div>
+								</li>
+								<li>
+									<div class="contact-address-icon">
+										<i class="icofont icofont-web"></i>
+									</div>
+									<div class="contact-address-info">
+										<a href="https://stapps869.github.io">www.stapps869.com</a>
+									</div>
+								</li>
+							</ul>
+						</div>
                     </div>
-                    <div class="input-row">
-                        <input class="form-control" type="text" placeholder="Last name" />
+				</div>
+				<div class="row">
+                    <div class="col-lg-12">
+						<div class="subscribe-form">
+							<form action="#">
+								<input type="text" placeholder="Your email address here">
+								<button type="submit">Subcribe</button>
+							</form>
+						</div>
                     </div>
-                    <div class="input-row">
-                        <input class="form-control" type="text" placeholder="Create password name" />
+				</div>
+				<div class="row">
+                    <div class="col-lg-12">
+						<div class="copyright-area">
+							<ul>
+								<li><a href="https://www.facebook.com/stnapps/" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
+								<li><a href="https://twitter.com/tranngocsang" target="_blank"><i class="icofont icofont-social-twitter"></i></a></li>
+								<li><a href="https://pin.it/33tvgra6wtenjg" target="_blank"><i class="icofont icofont-social-pinterest"></i></a></li>
+								<li><a href="https://plus.google.com/115110863473595060786" target="_blank"><i class="icofont icofont-social-google-plus"></i></a></li>
+							</ul>
+							<p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="https://stapps869.github.io" target="_blank">STAPP869</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						</div>
                     </div>
-                    <p class="label-text" ; style="color: black; margin-top: 10px">Birthday</p>
-                    <p style="">
-                        To sign up, you must be 10 or older. Other people won't see your birthday.
-                    </p>
-
-                    <div style="display: flex">
-                        <div style="flex: 1; padding-right: 5px">
-                            <input class="form-control" type="text" placeholder="Month" />
-                        </div>
-                        <div style="flex: 1; padding-right: 5px">
-                            <input class="form-control" type="text" placeholder="Day" />
-                        </div>
-                        <div style="flex: 1; padding-right: 5px">
-                            <input class="form-control" type="text" placeholder="Year" />
-                        </div>
-                    </div>
-
-                    <p style="margin-top: 10px;">
-                        We'll send you marketing promotions, special offers, inspiration, and policy updates via email.
-                    </p>
-                    <div style="margin-top: 10px">
-                        <button class="btn" style="color: white; background-color: #FD6666; width:100%; font-size: 19px">
-                            Sign up
-                        </button>
-                    </div>
-                    <div style="margin-top: 10px">
-                        <label class="checkbox-radio-custom">
-                            <span></span>
-                            <input type="checkbox" />
-                        </label>
-                        <span>
-                            I don't want to recevie marketing messages from 1102. I can also opt out of receving these at any time in my account settings or via the link in the message.
-                        </span>
-                    </div>
-                </form>
-                <hr />
-
-                <div>
-                    <span>Aready have an 1102 account?</span><strong style="color: #009BFB; font-family: HelveticaNeueMedium"> Login</strong>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    </div>
-    <script src="Scripts/jquery-3.3.1.js"></script>
-    <script src="Scripts/jquery.validate.js"></script>
-    <script src="Scripts/bootstrap.js"></script>
-
-    <script src="AssetsLibs/common/extendDate.js"></script>
-    <script src="AssetsLibs/common/extendNumber.js"></script>
-    <script src="AssetsLibs/common/extendString.js"></script>
-    <script src="AssetsLibs/common/extendJquery.js"></script>
-    <script src="AssetsLibs/common/extendMethods.js"></script>
-
-    <script src="Scripts/app.js"></script>
-
-    <script>$(document).ready(function () {
-            app.initFrontEnd();
-
-        });</script>
-
-    
-</body>
-
-<!-- Mirrored from localhost:44382/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 29 Jun 2019 04:48:26 GMT -->
+				</div>
+			</div>
+		</footer><!-- footer section end -->
+		
+		<!-- jquery main JS -->
+		<script src="assets/js/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- Slick nav JS -->
+		<script src="assets/js/jquery.slicknav.min.js"></script>
+		<!-- Slick JS -->
+		<script src="assets/js/slick.min.js"></script>
+		<!-- owl carousel JS -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- Popup JS -->
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<!-- Counter JS -->
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<!-- Counterup waypoints JS -->
+		<script src="assets/js/waypoints.min.js"></script>
+		<!-- jQuery Easing JS -->
+		<script src="assets/js/jquery.easing.1.3.js"></script>
+		<!-- WOW JS -->
+		<script src="assets/js/wow-1.3.0.min.js"></script>
+		<!-- Switcher JS -->
+		<script src="assets/js/switcher.js"></script>
+		<!-- main JS -->
+		<script src="assets/js/main.js"></script>
+	</body>
 </html>
